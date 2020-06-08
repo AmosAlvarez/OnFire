@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 285c3a9a619e943478c567dfe504568e
+timeCreated: 1519144716
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 64
+  forceTextureCase: 3
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Flame on!
+  fontNames:
+  - Flame on!
+  fallbackFontReferences: []
+  customCharacters: On Fire!
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
