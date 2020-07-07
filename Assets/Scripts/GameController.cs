@@ -11,8 +11,7 @@ public class GameController : MonoBehaviour {
 
 	public int puntuacion = 0;
 
-	[SerializeField]
-	int monedas = 0;
+	public int monedas = 0;
 
 	Text marcador;
 
@@ -29,6 +28,10 @@ public class GameController : MonoBehaviour {
 	public GameObject[] personajes;
 
 	public int personajeSeleccionado = 0;
+
+	public GameObject pjSeleccionado;
+
+	public List<int> pjsDesbloqueados;
 
 	private void Awake()
 	{
@@ -47,6 +50,7 @@ public class GameController : MonoBehaviour {
 		ComprobarEscena();
 
 		Cargar();
+
 	}
 
 	// Use this for initialization
@@ -59,7 +63,6 @@ public class GameController : MonoBehaviour {
 	private void Update()
 	{
 		ComprobarEscena();
-		Debug.Log(personajeSeleccionado);
 	}
 
 	public void ActualizarMarcador () {
@@ -99,6 +102,8 @@ public class GameController : MonoBehaviour {
 			DatosAGuardar datos = (DatosAGuardar)bf.Deserialize(file);
 
 			puntuacionMaxima = datos.puntuacionMaxima;
+			monedas = datos.monedillas;
+			//pjsDesbloqueados = datos.pjsDesbloqueados;
 
 			file.Close();
 		}
@@ -116,6 +121,7 @@ public class GameController : MonoBehaviour {
 		DatosAGuardar datos = new DatosAGuardar();
 		datos.puntuacionMaxima = puntuacionMaxima;
 		datos.monedillas = monedas;
+		datos.pjsDesbloqueados = pjsDesbloqueados;
 
 		bf.Serialize(file, datos);
 
@@ -128,4 +134,5 @@ class DatosAGuardar
 {
 	public int puntuacionMaxima;
 	public int monedillas;
+	public List<int> pjsDesbloqueados;
 }

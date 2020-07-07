@@ -27,6 +27,11 @@ public class ControladorPersonaje : MonoBehaviour {
 
 	FJiggling_Simple jigg;
 
+	public bool caida;
+	public bool dash;
+	public bool lento;
+	public bool xxx;
+
 	void Awake(){
 		animator = GetComponent<Animator>();
 		gameController = GameObject.Find("GameController").GetComponent<GameController>();
@@ -108,6 +113,7 @@ public class ControladorPersonaje : MonoBehaviour {
 		{
 			cayendo = true;
 			rb.velocity = new Vector2(rb.velocity.x, -fuerzaCaida);
+			//rb.AddForce (new Vector2(rb.velocity.x, 0));
 		}
 	}
 

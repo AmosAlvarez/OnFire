@@ -21,22 +21,29 @@ public class Personaje : MonoBehaviour
 
     public int posicionEnArray;
 
+    GameController gameController;
+
+  
+
+    //GameObject personaje;
+
     private void Start()
     {
         personajeGrande = GameObject.Find("PJGrande").GetComponent<PersonajeGrande>();
 
         image = this.gameObject.GetComponent<Image>();
 
-        if (desbloqueado)
-        {
-            image.sprite = spriteNuevo;
-        }
+        Activar();
 
         textoBoton = GameObject.Find("TextoBotonSkins").GetComponent<Text>();
+
+        gameController = GameObject.Find("GameController").GetComponent<GameController>();
     }
 
     public void Clickado()
     {
+        gameController.pjSeleccionado = this.gameObject;
+
         if (desbloqueado)
         {
             personajeGrande.image.sprite = spriteNuevo;
@@ -51,11 +58,20 @@ public class Personaje : MonoBehaviour
         }
         else
         {
+            
             personajeGrande.image.sprite = spriteSilueta;
             textoBoton.text = "UNLOCK";
+            
         }
 
         
     }
 
+    public void Activar()
+    {
+        if (desbloqueado)
+        {
+            image.sprite = spriteNuevo;
+        }
+    }
 }

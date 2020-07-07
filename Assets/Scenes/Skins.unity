@@ -1530,7 +1530,7 @@ MonoBehaviour:
     type: 3}
   spriteSilueta: {fileID: 21300000, guid: 010aa60dfd4d4d14cabd6380d798e7f3, type: 3}
   precio: 0
-  desbloqueado: 1
+  desbloqueado: 0
   seleccionado: 0
   posicionEnArray: 6
 --- !u!1 &313015272
@@ -2233,6 +2233,90 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!1 &469699567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 469699569}
+  - component: {fileID: 469699568}
+  m_Layer: 0
+  m_Name: SkinsController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &469699568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469699567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb5a9ae8d32f09f4eb9c8d741abde693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pjs:
+  - {fileID: 436452563}
+  - {fileID: 1487499411}
+  - {fileID: 2061927995}
+  - {fileID: 373081093}
+  - {fileID: 1106359372}
+  - {fileID: 1829992021}
+  - {fileID: 567707690}
+  - {fileID: 323900165}
+  - {fileID: 300144287}
+  - {fileID: 1862973996}
+  - {fileID: 2129156039}
+  - {fileID: 1606791818}
+  - {fileID: 1102643831}
+  - {fileID: 1877509187}
+  - {fileID: 52503541}
+  - {fileID: 831200041}
+  - {fileID: 36474738}
+  - {fileID: 1635993144}
+  - {fileID: 1449901266}
+  - {fileID: 912883036}
+  - {fileID: 1001294797}
+  - {fileID: 1181330937}
+  - {fileID: 635973921}
+  - {fileID: 685661418}
+  - {fileID: 486629124}
+  - {fileID: 557770878}
+  - {fileID: 740810237}
+  - {fileID: 654750476}
+  - {fileID: 289744764}
+  - {fileID: 1652153909}
+  - {fileID: 1544970574}
+  - {fileID: 711038327}
+  - {fileID: 1091715042}
+  - {fileID: 1080573162}
+  - {fileID: 1421789154}
+  - {fileID: 268383167}
+  - {fileID: 1166490317}
+  - {fileID: 129391071}
+  - {fileID: 1139489488}
+  - {fileID: 2037006650}
+--- !u!4 &469699569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469699567}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 102.586426, y: 563.00867, z: -78.289}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &486629124
 GameObject:
   m_ObjectHideFlags: 0
@@ -2784,7 +2868,7 @@ MonoBehaviour:
     type: 3}
   spriteSilueta: {fileID: 21300000, guid: 826c05db31db4f8449909fbab3f3e8cc, type: 3}
   precio: 0
-  desbloqueado: 1
+  desbloqueado: 0
   seleccionado: 0
   posicionEnArray: 5
 --- !u!1 &635973921
@@ -4538,7 +4622,7 @@ MonoBehaviour:
     type: 3}
   spriteSilueta: {fileID: 21300000, guid: 5b44613fde894b94c826d081ac624128, type: 3}
   precio: 0
-  desbloqueado: 1
+  desbloqueado: 0
   seleccionado: 0
   posicionEnArray: 10
 --- !u!1 &1106359372
@@ -4687,8 +4771,8 @@ MonoBehaviour:
   spriteNuevoSleccionado: {fileID: 21300000, guid: 7ddedfc67b6d5fb4eac4aa190e272874,
     type: 3}
   spriteSilueta: {fileID: 21300000, guid: 826c05db31db4f8449909fbab3f3e8cc, type: 3}
-  precio: 0
-  desbloqueado: 1
+  precio: 5
+  desbloqueado: 0
   seleccionado: 0
   posicionEnArray: 3
 --- !u!1 &1139489488
@@ -5783,8 +5867,8 @@ MonoBehaviour:
   spriteNuevoSleccionado: {fileID: 21300000, guid: 65ab3a707cf03ba4f8fcc43777c230d2,
     type: 3}
   spriteSilueta: {fileID: 21300000, guid: e476cbd9767053f42a81839e8d25e6a8, type: 3}
-  precio: 0
-  desbloqueado: 1
+  precio: 1
+  desbloqueado: 0
   seleccionado: 0
   posicionEnArray: 1
 --- !u!1 &1544970574
@@ -6084,7 +6168,7 @@ MonoBehaviour:
     type: 3}
   spriteSilueta: {fileID: 21300000, guid: 010aa60dfd4d4d14cabd6380d798e7f3, type: 3}
   precio: 0
-  desbloqueado: 1
+  desbloqueado: 0
   seleccionado: 0
   posicionEnArray: 9
 --- !u!1 &1635993144
@@ -6610,7 +6694,7 @@ MonoBehaviour:
     type: 3}
   spriteSilueta: {fileID: 21300000, guid: 826c05db31db4f8449909fbab3f3e8cc, type: 3}
   precio: 0
-  desbloqueado: 1
+  desbloqueado: 0
   seleccionado: 0
   posicionEnArray: 4
 --- !u!1 &1830820351
@@ -6864,7 +6948,7 @@ MonoBehaviour:
     type: 3}
   spriteSilueta: {fileID: 21300000, guid: 010aa60dfd4d4d14cabd6380d798e7f3, type: 3}
   precio: 0
-  desbloqueado: 1
+  desbloqueado: 0
   seleccionado: 0
   posicionEnArray: 7
 --- !u!1 &1877509187
@@ -7700,7 +7784,7 @@ MonoBehaviour:
     type: 3}
   spriteSilueta: {fileID: 21300000, guid: e476cbd9767053f42a81839e8d25e6a8, type: 3}
   precio: 0
-  desbloqueado: 1
+  desbloqueado: 0
   seleccionado: 0
   posicionEnArray: 2
 --- !u!1 &2095759828
@@ -8206,6 +8290,6 @@ MonoBehaviour:
     type: 3}
   spriteSilueta: {fileID: 21300000, guid: 010aa60dfd4d4d14cabd6380d798e7f3, type: 3}
   precio: 0
-  desbloqueado: 1
+  desbloqueado: 0
   seleccionado: 0
   posicionEnArray: 8
